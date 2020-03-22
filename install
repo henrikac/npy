@@ -1,0 +1,15 @@
+#!/bin/bash
+
+INSTALL_PATH="/home/$USER/.local/bin"
+
+if [[ :$PATH: == *:"$INSTALL_PATH":* ]] ; then
+	if [ ! -d "$LINK_OR_DIR" ]; then
+		mkdir $INSTALL_PATH
+	fi
+
+	cp npy $INSTALL_PATH && cd $INSTALL_PATH
+	chmod 755 npy
+	echo "npy was successfully installed!"
+else
+	echo "$INSTALL_PATH is not in \$PATH"
+fi
