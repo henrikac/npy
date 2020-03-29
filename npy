@@ -10,5 +10,6 @@ touch .gitignore
 git init
 eval $PY_VER -m venv venv
 source venv/bin/activate
+pip3 install --upgrade pip
 
 echo "Python project created!"
