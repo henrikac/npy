@@ -12,7 +12,7 @@ A new project will contain:
 + Run the install script: `bash ./install`
 
 ## Usage:
-To create a new project: `source npy <project-name>`.
-To activate a virtual environment: `source svenv <virtual-environment-name>`
++ To create a new project: `source npy <project-name>`.
++ To activate a virtual environment: `source svenv <virtual-environment-name>`
 
 To get rid of *source* simply add `alias npy="source npy"` and `alias svenv="source svenv"` to your `.bashrc` file.
