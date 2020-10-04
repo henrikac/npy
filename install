@@ -7,7 +7,8 @@ if [[ :$PATH: == *:"$INSTALL_PATH":* ]] ; then
 		mkdir $INSTALL_PATH
 	fi
 
-	cp npy $INSTALL_PATH && cd $INSTALL_PATH
+	cp svenv $INSTALL_PATH && cp npy $INSTALL_PATH && cd $INSTALL_PATH
+	chmod 755 svenv
 	chmod 755 npy
 	echo "npy was successfully installed!"
 else

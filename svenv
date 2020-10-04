@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: svenv <virtual-env-name>\n"
+	echo "Example: svenv venv"
+else
+	VENV="$1"
+
+	if [ -d $VENV  ]; then
+		source $VENV/bin/activate
+	else
+		echo "Couldn't find: $VENV"
+	fi
+fi
