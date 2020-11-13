@@ -17,6 +17,6 @@ git clone https://github.com/henrikac/npy.git && cd npy && bash install
 ```
 
 ## Usage:
-+ To create a new project: `npy <project-name>`.
-+ To activate a virtual environment: `svenv <virtual-environment-name>`
++ To create a new project: `source npy <project-name>`.
++ To activate a virtual environment: `source svenv <virtual-environment-name>`
 
